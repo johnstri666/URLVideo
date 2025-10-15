@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video X</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #111;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      video:hover {
+        transform: scale(1.03);
+        transition: 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Koleksi Video</h1>
+
+    <div class="video-grid">
+      <video src="video/temerarionew.mp4" controls></video>
+      <video src="video/result.mp4" controls></video>
+      <video src="video/video3.mp4" controls></video>
+      <video src="video/video4.mp4" controls></video>
+      <video src="video/video5.mp4" controls></video>
+      <video src="video/video6.mp4" controls></video>
+    </div>
+  </body>
+</html>
