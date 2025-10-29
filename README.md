@@ -1,2 +1,2 @@
 # URLVideo
-Sebagai bahan untuk video
+video asset
