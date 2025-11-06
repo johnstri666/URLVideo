@@ -23,6 +23,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
+        margin-bottom: 50px;
       }
 
       video {
@@ -30,11 +31,30 @@
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
       }
 
       video:hover {
         transform: scale(1.03);
-        transition: 0.3s ease;
+      }
+
+      /* Bagian Audio */
+      .audio-section {
+        margin-top: 40px;
+      }
+
+      .audio-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      audio {
+        width: 100%;
+        outline: none;
+        border-radius: 10px;
+        background-color: #222;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       }
     </style>
   </head>
@@ -56,18 +76,19 @@
       <video src="video/i8.mp4" controls></video>
       <video src="video/senna.mp4" controls></video>
       <video src="video/mercedes.mp4" controls></video>
+    </div>
 
+    <!-- Bagian Koleksi Audio -->
+    <div class="audio-section">
+      <h1>Koleksi Audio</h1>
+
+      <div class="audio-grid">
+        <audio src="audio/sennasound.mp3" controls></audio>
+        <audio src="audio/song2.mp3" controls></audio>
+        <audio src="audio/song3.mp3" controls></audio>
+        <audio src="audio/song4.mp3" controls></audio>
+        <audio src="audio/song5.mp3" controls></audio>
+      </div>
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
